@@ -20,7 +20,7 @@ The core automation functionality is built around the [BatchJob](./lib/batch-job
 
 The goal of `BatchJob` is to ensure that potentially large batches of Twitter API calls are **serializable** and **resumable**.
 
-A `BatchJob` stores all of the state it would need to continue resolving its async batched operation in the event of an error. `BatchJob` instances can serialize this state in order to support exporting them to persistent storage (like a database or a JSON file on disk).
+A `BatchJob` stores all of the state it would need to continue resolving its async batched operation in the event of an error. `BatchJob` instances support serializing their state in order to store them in a database of JSON file on disk.
 
 Here's an example batch job in action:
 
