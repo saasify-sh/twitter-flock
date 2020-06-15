@@ -6,13 +6,14 @@ require('dotenv-safe').config()
 // const dedent = require('dedent')
 // const twitter = require('./lib/twitter')
 // const spinner = require('./lib/spinner')
-const BatchJobFactory = require('./lib/batch-job-factory')
+// const BatchJobFactory = require('./lib/batch-job-factory')
+const Workflow = require('./lib/workflow')
 
 const twitterAccessToken = process.env.TWITTER_USER_ACCESS_TOKEN
 const twitterAccessTokenSecret = process.env.TWITTER_USER_ACCESS_TOKEN_SECRET
 
 async function main() {
-  const job = BatchJobFactory.createWorkflow({
+  const job = new Workflow({
     params: {
       accessToken: twitterAccessToken,
       accessTokenSecret: twitterAccessTokenSecret,
@@ -81,7 +82,7 @@ async function main() {
   // })
 
   await job.run()
-  console.log(JSON.stringify(JSON.parse(job.seralize()), null, 2))
+  console.log(JSON.stringify(JSON.parse(job.serialize()), null, 2))
 
   // const twitterClient = await spinner(
   //   twitter.getClient({
