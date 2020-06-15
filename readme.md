@@ -69,7 +69,7 @@ await job.run()
 
 This workflow is comprised of three jobs:
 
-- `twitter:get-followers` - Fetches all of your follower user ids.
+- `twitter:get-followers` - Fetches the user ids of all of your followers.
   - Batches twitter API calls to [twitter followers/ids](https://developer.twitter.com/en/docs/accounts-and-users/follow-search-get-users/api-reference/get-followers-ids)
 - `twitter:lookup-users` - Expands these user ids into user objects.
   - Batches twitter API calls to [users/lookup](https://developer.twitter.com/en/docs/accounts-and-users/follow-search-get-users/api-reference/get-users-lookup)
