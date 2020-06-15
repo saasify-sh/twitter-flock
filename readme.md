@@ -119,6 +119,8 @@ This workflow is comprised of three jobs:
 - `twitter:send-direct-messages` - Sends a template-based direct message to each of these users.
   - Batches twitter API calls to [direct_messages/events/new](https://developer.twitter.com/en/docs/direct-messages/sending-and-receiving/api-reference/new-event)
 
+Note that a `Workflow` is itself a `BatchJob`. The two share the same interface in order for workflows to also be serializable and resumable.
+
 ## Future work
 
 A more robust, scalable version of this project would use a solution like [Apache Kafka](https://kafka.apache.org). [Kafka.js](https://kafka.js.org) looks useful as a higher-level Node.js wrapper.
