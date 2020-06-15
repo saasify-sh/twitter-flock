@@ -22,8 +22,8 @@ async function main() {
           type: 'twitter:get-followers',
           label: 'followers',
           params: {
-            maxLimit: 1,
-            count: 1
+            maxLimit: 10,
+            count: 10
           }
         },
         {
@@ -31,7 +31,8 @@ async function main() {
           label: 'users',
           connect: {
             userIds: 'followers'
-          }
+          },
+          transforms: ['sort-users-by-fuzzy-popularity']
         },
         {
           type: 'twitter:send-direct-messages',
@@ -86,26 +87,6 @@ async function main() {
 
   await job.run()
   console.log(JSON.stringify(JSON.parse(job.serialize()), null, 2))
-
-  // const twitterClient = await spinner(
-  //   twitter.getClient({
-  //     accessToken: twitterAccessToken,
-  //     accessTokenSecret: twitterAccessTokenSecret
-  //   }),
-  //   'Initializing twitter'
-  // )
-
-  // const res = await twitterClient.resolvePagedQuery('followers/ids', {
-  //   resultsKey: 'ids',
-  //   maxLimit: 10,
-  //   twitterOptions: {
-  //     stringify_ids: true,
-  //     count: 1
-  //   }
-  // })
-
-  // const followers = res.results
-  // console.log('followers', JSON.stringify(followers, null, 2))
 }
 
 main().catch((err) => {
