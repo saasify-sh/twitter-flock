@@ -2,9 +2,7 @@
 
 > Simple & robust workflow automations for Twitter.
 
-[![NPM](https://img.shields.io/npm/v/twitter-flock.svg)](https://www.npmjs.com/package/twitter-flock) [![Build Status](https://travis-ci.com/saasify-sh/twitter-flock.svg?branch=master)](https://travis-ci.com/saasify-sh/twitter-flock) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-
-**TODO**: pretty demo
+[![Build Status](https://travis-ci.com/saasify-sh/twitter-flock.svg?branch=master)](https://travis-ci.com/saasify-sh/twitter-flock) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## How it works
 
