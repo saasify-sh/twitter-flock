@@ -10,11 +10,13 @@
   },
   "dependencies": {
     "btoa": "^1.2.1",
+    "delay": "^4.3.0",
     "dotenv-safe": "^8.2.0",
     "find-free-port": "^2.0.0",
     "handlebars": "^4.7.6",
     "koa": "^2.12.1",
     "lodash.pick": "^4.4.0",
+    "ms": "^2.1.2",
     "open": "^7.0.4",
     "ora": "^4.0.4",
     "p-retry": "^4.2.0",
