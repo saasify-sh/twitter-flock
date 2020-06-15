@@ -22,6 +22,60 @@ Each `BatchJob` instance stores all of the state it would need to continue resol
 
 Sequences of `BatchJob` instances can be connected together to form a [Workflow](./lib/workflow.js).
 
+Here's an example workflow:
+
+```js
+const job = new Workflow({
+  params: {
+    //  user oauth credentials
+    accessToken: twitterAccessToken,
+    accessTokenSecret: twitterAccessTokenSecret,
+    pipeline: [
+      {
+        type: 'twitter:get-followers',
+        label: 'followers',
+        params: {
+          // only fetches your first 10 followers for testing purposes
+          maxLimit: 10,
+          count: 10
+        }
+      },
+      {
+        type: 'twitter:lookup-users',
+        label: 'users',
+        connect: {
+          // connect the output of the first job to the `userIds` param for this job
+          userIds: 'followers'
+        },
+        transforms: ['sort-users-by-fuzzy-popularity']
+      },
+      {
+        type: 'twitter:send-direct-messages',
+        connect: {
+          // connect the output of the second job to the `users` param for this job
+          users: 'users'
+        },
+        params: {
+          // handlebars template with access to the current twitter user object
+          template: `Hey @{{user.screen_name}}, I'm testing an open source Twitter automation tool and you happen to be my one and only lucky test user.\n\nSorry for the spam. https://github.com/saasify-sh/twitter-flock`
+        }
+      }
+    ]
+  }
+})
+
+await job.run()
+```
+
+This workflow is comprised of three jobs:
+
+- `twitter:get-followers` - Fetches all of your follower user ids.
+  - Batches twitter API calls to [twitter followers/ids](https://developer.twitter.com/en/docs/accounts-and-users/follow-search-get-users/api-reference/get-followers-ids)
+- `twitter:lookup-users` - Expands these user ids into user objects.
+  - Batches twitter API calls to [users/lookup](https://developer.twitter.com/en/docs/accounts-and-users/follow-search-get-users/api-reference/get-users-lookup)
+- `twitter:send-direct-messages` - Sends a template-based direct message to each of these users.
+  - Batches twitter API calls to [direct_messages/events/new](https://developer.twitter.com/en/docs/direct-messages/sending-and-receiving/api-reference/new-event)
+
 ## Future work
 
 A more robust, scalable version of this project should use something along the lines of [Apache Kafka](https://kafka.apache.org), potentially using [kafka.js](https://kafka.js.org).
