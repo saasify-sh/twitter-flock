@@ -18,14 +18,14 @@ All automations are built around Twitter OAuth which gives us higher rate limits
 
 The core automation functionality is built around the [BatchJob](./lib/batch-job.js) class.
 
-`BatchJob` ensures that potentially large batches of Twitter API calls are **serializable** and **resumable**.
+The goal of `BatchJob` is to ensure that potentially large batches of Twitter API calls are **serializable** and **resumable**.
 
-A `BatchJob` stores all of the state it would need to continue resolving its async batched operation in the event of an error. `BatchJob` instances can serialize this state in order to support exporting them to persistent storage (like a database or JSON file on disk).
+A `BatchJob` stores all of the state it would need to continue resolving its async batched operation in the event of an error. `BatchJob` instances can serialize this state in order to support exporting them to persistent storage (like a database or a JSON file on disk).
 
-Here's an example batch job:
+Here's an example batch job in action:
 
 ```js
-// fetches the user ids of all your followers
+// fetches the user ids for all of your followers
 const job = BatchJobFactory.createBatchJobTwitterGetFollowers({
   params: {
     // assumes that you already have user oauth credentials
@@ -119,7 +119,7 @@ This workflow is comprised of three jobs:
 - `twitter:send-direct-messages` - Sends a template-based direct message to each of these users.
   - Batches twitter API calls to [direct_messages/events/new](https://developer.twitter.com/en/docs/direct-messages/sending-and-receiving/api-reference/new-event)
 
-Note that `Workflow` derives from `BatchJob`. The two share the same interface in order for workflows to also be serializable and resumable. Huzzah!
+Note that `Workflow` derives from `BatchJob`, so workflows are also serializable and resumable. Huzzah!
 
 ## Future work
 
