@@ -18,6 +18,44 @@ The core functionality is built around the [BatchJob](./lib/batch-job.js) class.
 
 Each `BatchJob` instance stores all of the state it would need to continue resolving its async batched operation in the event of an error like hitting a rate limit. `BatchJob` instances are serializable in order to support exporting them to persistent storage (like a database or JSON file on disk).
 
+Here's an example of creating a batch job that will fetch all of the user IDs for your twitter followers.
+
+It also shows how to serialize and resume a job.
+
+```js
+const job = BatchJobFactory.createBatchJobTwitterGetFollowers({
+  params: {
+    // assumes that you already have user oauth credentials
+    accessToken: twitterAccessToken,
+    accessTokenSecret: twitterAccessTokenSecret,
+
+    // only fetch your first 10 followers for testing purposes
+    maxLimit: 10,
+    count: 10
+  }
+})
+
+// process as much of this job as possible until it either completes or errors
+await job.run()
+
+// job.status: 'active' | 'done' | 'error'
+// job.results: string[]
+console.log(job.status, job.results)
+
+// store this job to disk
+fs.writeFileSync('out.json', job.serialize())
+
+// ...
+
+// read the job from disk and resume processing
+const jobData = fs.readFileSync('out.json')
+const job = BatchJobFactory.deserialize(jobData)
+
+if (job.status === 'active') {
+  await job.run()
+}
+```
+
 ### Workflow
 
 Sequences of `BatchJob` instances can be connected together to form a [Workflow](./lib/workflow.js).
@@ -27,7 +65,7 @@ Here's an example workflow:
 ```js
 const job = new Workflow({
   params: {
-    //  user oauth credentials
+    // assumes that you already have user oauth credentials
     accessToken: twitterAccessToken,
     accessTokenSecret: twitterAccessTokenSecret,
     pipeline: [
@@ -35,7 +73,7 @@ const job = new Workflow({
         type: 'twitter:get-followers',
         label: 'followers',
         params: {
-          // only fetches your first 10 followers for testing purposes
+          // only fetch your first 10 followers for testing purposes
           maxLimit: 10,
           count: 10
         }
@@ -78,9 +116,9 @@ This workflow is comprised of three jobs:
 
 ## Future work
 
-A more robust, scalable version of this project should use something along the lines of [Apache Kafka](https://kafka.apache.org), potentially using [kafka.js](https://kafka.js.org).
+A more robust, scalable version of this project would use a solution like [Apache Kafka](https://kafka.apache.org). [Kafka.js](https://kafka.js.org) looks useful as a higher-level Node.js wrapper.
 
-Kafka would add quite a bit of complexity, but it would also handle a lot of details and be significantly more efficient. In particular, Kafa would solve the producer / consumer model, give us much more robust error handling, horizontal scalability, storing and committing state, and enable easy interop with many different data sources and sinks.
+Kafka would add quite a bit of complexity, but it would also handle a lot of details and be significantly more efficient. In particular, Kafka would solve the producer / consumer model, give us more robust error handling, horizontal scalability, storing and committing state, and enable easy interop with different data sources and sinks.
 
 This project was meant as a quick prototype, however, and our relatively simple `BatchJob` abstraction works pretty well all things considered.
 
@@ -88,7 +126,7 @@ This project was meant as a quick prototype, however, and our relatively simple 
 
 One of the disadvantages of the current design is that a `BatchJob` needs to complete before any dependent jobs can run, whereas we'd really like to model this as a [Producer-Consumer problem](https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem).
 
-### DAG
+### DAGs
 
 Another shortcoming of the current design is that `Workflows` can only combine sequences of jobs where the output of one job feeds into the input of the next job.
 
