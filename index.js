@@ -12,8 +12,7 @@ const twitterAccessToken = process.env.TWITTER_USER_ACCESS_TOKEN
 const twitterAccessTokenSecret = process.env.TWITTER_USER_ACCESS_TOKEN_SECRET
 
 async function main() {
-  const workflow = BatchJobFactory.createWorkflow({
-    type: 'workflow:twitter:message-followers',
+  const job = BatchJobFactory.createWorkflow({
     params: {
       accessToken: twitterAccessToken,
       accessTokenSecret: twitterAccessTokenSecret,
@@ -43,7 +42,7 @@ async function main() {
     }
   })
 
-  // const batchJob = BatchJobFactory.createBatchJobTwitterGetFollowers({
+  // const job = BatchJobFactory.createBatchJobTwitterGetFollowers({
   //   params: {
   //     accessToken: twitterAccessToken,
   //     accessTokenSecret: twitterAccessTokenSecret,
@@ -52,7 +51,7 @@ async function main() {
   //   }
   // })
 
-  // const batchJob = BatchJobFactory.createBatchJobTwitterLookupUsers({
+  // const job = BatchJobFactory.createBatchJobTwitterLookupUsers({
   //   params: {
   //     accessToken: twitterAccessToken,
   //     accessTokenSecret: twitterAccessTokenSecret,
@@ -70,7 +69,7 @@ async function main() {
   //   }
   // })
 
-  // const batchJob = BatchJobFactory.createBatchJobTwitterSendDirectMessages({
+  // const job = BatchJobFactory.createBatchJobTwitterSendDirectMessages({
   //   params: {
   //     accessToken: twitterAccessToken,
   //     accessTokenSecret: twitterAccessTokenSecret,
@@ -81,8 +80,8 @@ async function main() {
   //   }
   // })
 
-  await batchJob.run()
-  console.log(JSON.stringify(JSON.parse(batchJob.seralize()), null, 2))
+  await job.run()
+  console.log(JSON.stringify(JSON.parse(job.seralize()), null, 2))
 
   // const twitterClient = await spinner(
   //   twitter.getClient({
