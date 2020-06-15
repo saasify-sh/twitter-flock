@@ -3,9 +3,6 @@
 
 require('dotenv-safe').config()
 
-// const dedent = require('dedent')
-// const twitter = require('./lib/twitter')
-// const spinner = require('./lib/spinner')
 // const BatchJobFactory = require('./lib/batch-job-factory')
 const Workflow = require('./lib/workflow')
 
@@ -79,7 +76,7 @@ async function main() {
   //     accessToken: twitterAccessToken,
   //     accessTokenSecret: twitterAccessTokenSecret,
   //     users: [user],
-  //     template: dedent`Hey @{{user.screen_name}},
+  //     template: `Hey @{{user.screen_name}},
 
   //     Thanks for following me ☺ Check out https://github.com/saasify-sh/saasify`
   //   }
