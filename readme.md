@@ -1,6 +1,6 @@
 # Twitter Flock
 
-> Utilities for automating Twitter workflows that work on any sized account.
+> Simple & robust workflow automations for Twitter.
 
 [![NPM](https://img.shields.io/npm/v/twitter-flock.svg)](https://www.npmjs.com/package/twitter-flock) [![Build Status](https://travis-ci.com/saasify-sh/twitter-flock.svg?branch=master)](https://travis-ci.com/saasify-sh/twitter-flock) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -20,11 +20,11 @@ One of the disadvantages of the current design is that a `BatchJob` needs to com
 
 ## Future work
 
-A more robust, scalable version of this project should use something along the lines of [Apache Kafka](https://kafka.apache.org) likely using [kafka.js](https://kafka.js.org).
+A more robust, scalable version of this project should use something along the lines of [Apache Kafka](https://kafka.apache.org), potentially using [kafka.js](https://kafka.js.org).
 
-Kafka would add quite a bit of complexity, but it would also handle quite a few details and be significantly more efficient. In particular, Kafa would solve the producer / consumer model, give us much more robust error modeling, handle storing and commiting state, and enable easy interop with many data sources and sinks.
+Kafka would add quite a bit of complexity, but it would also handle a lot of details and be significantly more efficient. In particular, Kafa would solve the producer / consumer model, give us much more robust error handling, horizontal scalability, storing and committing state, and enable easy interop with many different data sources and sinks.
 
-This project was meant to be a quick prototype, however, and our relatively simple `BatchJob` abstraction works pretty well all things considered.
+This project was meant as a quick prototype, however, and our relatively simple `BatchJob` abstraction works pretty well all things considered.
 
 ## License
 
