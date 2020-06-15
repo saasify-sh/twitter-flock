@@ -12,14 +12,45 @@ const twitterAccessToken = process.env.TWITTER_USER_ACCESS_TOKEN
 const twitterAccessTokenSecret = process.env.TWITTER_USER_ACCESS_TOKEN_SECRET
 
 async function main() {
-  const batchJob = BatchJobFactory.createBatchJobTwitterGetFollowers({
+  const workflow = BatchJobFactory.createWorkflow({
+    type: 'workflow:twitter:message-followers',
     params: {
       accessToken: twitterAccessToken,
       accessTokenSecret: twitterAccessTokenSecret,
-      maxLimit: 10,
-      count: 10
+      pipeline: [
+        {
+          type: 'twitter:get-followers',
+          label: 'followers',
+          params: {
+            maxLimit: 1,
+            count: 1
+          }
+        },
+        {
+          type: 'twitter:lookup-users',
+          label: 'users',
+          connect: {
+            userIds: 'followers'
+          }
+        },
+        {
+          type: 'twitter:send-direct-messages',
+          connect: {
+            users: 'users'
+          }
+        }
+      ]
     }
   })
+
+  // const batchJob = BatchJobFactory.createBatchJobTwitterGetFollowers({
+  //   params: {
+  //     accessToken: twitterAccessToken,
+  //     accessTokenSecret: twitterAccessTokenSecret,
+  //     maxLimit: 10,
+  //     count: 10
+  //   }
+  // })
 
   // const batchJob = BatchJobFactory.createBatchJobTwitterLookupUsers({
   //   params: {

@@ -14,7 +14,7 @@ The core functionality is built around the [BatchJob](./lib/batch-job.js) class 
 
 In particular, `BatchJob` ensures that potentially large batches of calls to specific Twitter API endpoints are **serializable** and **resumable**.
 
-Each `BatchJob` stores all state it needs to continue resolving an async batched operation in the event of any type of failure, and this state can be serialized and exported to a database.
+Each `BatchJob` stores all of the state it would need to continue resolving an async batched operation in the event of a failure. Since `BatchJob` instances are serialization, they're easy to export to any type of persistent storage like a database or JSON file on disk.
 
 One of the disadvantages of the current design is that a `BatchJob` needs to complete before any dependent jobs can run, whereas we'd really like to model this as a [Producer-Consumer problem](https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem).
 
