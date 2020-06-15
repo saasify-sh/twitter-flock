@@ -37,6 +37,9 @@ async function main() {
           type: 'twitter:send-direct-messages',
           connect: {
             users: 'users'
+          },
+          params: {
+            template: `Hey @{{user.screen_name}}, I'm testing an open source Twitter automation tool and you happen to be my one and only lucky test user.\n\nSorry for the spam. https://github.com/saasify-sh/twitter-flock`
           }
         }
       ]
