@@ -1,0 +1,1018 @@
+{
+  "id": "COrhEv8Mk",
+  "type": "lookup-users",
+  "status": "done",
+  "state": {},
+  "params": {
+    "accessToken": "1235525929335689217-R9Hw0A8xrOZXVVzdwFiopiMVhmW315",
+    "accessTokenSecret": "dRLiyYvcsCkuFsu6bMHFYE6aTrVNSzbFkM5FQ3xKs8HNg",
+    "batchSize": 2,
+    "userIds": [
+      "895851994346401792",
+      "1236214051576766469",
+      "948428628957843456",
+      "1256076780642934785",
+      "477975810",
+      "102739305",
+      "1263940243616600065",
+      "327034465"
+    ]
+  },
+  "createdAt": 1592190207,
+  "updatedAt": 1592190208,
+  "error": null,
+  "results": [
+    {
+      "id": 895851994346401800,
+      "id_str": "895851994346401792",
+      "name": "GBAARSofficial",
+      "screen_name": "GBAARSofficial",
+      "location": "United Kingdom",
+      "description": "UK based electronic music producer! #wavemusic \n\n For the latest news & activities, please visit https://t.co/OuWuzVOS81",
+      "url": "https://t.co/OuWuzW6twB",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/OuWuzW6twB",
+              "expanded_url": "http://www.gbaars.com",
+              "display_url": "gbaars.com",
+              "indices": [0, 23]
+            }
+          ]
+        },
+        "description": {
+          "urls": [
+            {
+              "url": "https://t.co/OuWuzVOS81",
+              "expanded_url": "http://www.gbaars.com",
+              "display_url": "gbaars.com",
+              "indices": [97, 120]
+            }
+          ]
+        }
+      },
+      "protected": false,
+      "followers_count": 1773,
+      "friends_count": 488,
+      "listed_count": 1,
+      "created_at": "Fri Aug 11 03:38:54 +0000 2017",
+      "favourites_count": 4477,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 389,
+      "lang": null,
+      "status": {
+        "created_at": "Fri Jun 12 01:26:05 +0000 2020",
+        "id": 1271252400473542700,
+        "id_str": "1271252400473542656",
+        "text": "RT @GBAARSofficial: Single “Light” is a relaxing musical piece that will take you on a trip beyond any worries and will let you enjoy the m…",
+        "truncated": false,
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "user_mentions": [
+            {
+              "screen_name": "GBAARSofficial",
+              "name": "GBAARSofficial",
+              "id": 895851994346401800,
+              "id_str": "895851994346401792",
+              "indices": [3, 18]
+            }
+          ],
+          "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "retweeted_status": {
+          "created_at": "Sat May 23 08:55:53 +0000 2020",
+          "id": 1264117839813841000,
+          "id_str": "1264117839813840897",
+          "text": "Single “Light” is a relaxing musical piece that will take you on a trip beyond any worries and will let you enjoy t… https://t.co/8RtdkexArg",
+          "truncated": true,
+          "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": [
+              {
+                "url": "https://t.co/8RtdkexArg",
+                "expanded_url": "https://twitter.com/i/web/status/1264117839813840897",
+                "display_url": "twitter.com/i/web/status/1…",
+                "indices": [117, 140]
+              }
+            ]
+          },
+          "source": "<a href=\"https://studio.twitter.com\" rel=\"nofollow\">Twitter Media Studio</a>",
+          "in_reply_to_status_id": null,
+          "in_reply_to_status_id_str": null,
+          "in_reply_to_user_id": null,
+          "in_reply_to_user_id_str": null,
+          "in_reply_to_screen_name": null,
+          "geo": null,
+          "coordinates": null,
+          "place": null,
+          "contributors": null,
+          "is_quote_status": false,
+          "retweet_count": 93,
+          "favorite_count": 455,
+          "favorited": false,
+          "retweeted": false,
+          "possibly_sensitive": false,
+          "lang": "en"
+        },
+        "is_quote_status": false,
+        "retweet_count": 93,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+      },
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1121247595412828160/YDH9Lh3x_normal.png",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1121247595412828160/YDH9Lh3x_normal.png",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/895851994346401792/1591944115",
+      "profile_link_color": "91D2FA",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    {
+      "id": 1236214051576766500,
+      "id_str": "1236214051576766469",
+      "name": "DJ Zen Cat",
+      "screen_name": "CQtheCoolSounds",
+      "location": "TOKYO JAPAN",
+      "description": "Grandma said 'Do your likes'. So I studied English, I make DJ cat and Japanese Zen infused  music. and deliver it to the world. It's my challenge.",
+      "url": "https://t.co/4VPRBfTYcz",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/4VPRBfTYcz",
+              "expanded_url": "https://www.youtube.com/channel/UCn7zGYxxcdVEguuDJwq_QGQ?view_as=subscriber",
+              "display_url": "youtube.com/channel/UCn7zG…",
+              "indices": [0, 23]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 84,
+      "friends_count": 88,
+      "listed_count": 0,
+      "created_at": "Sat Mar 07 08:56:21 +0000 2020",
+      "favourites_count": 7186,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 476,
+      "lang": null,
+      "status": {
+        "created_at": "Wed Jun 10 07:22:36 +0000 2020",
+        "id": 1270617344042168300,
+        "id_str": "1270617344042168322",
+        "text": "RT @CQtheCoolSounds: I want to feel groove and beat. So I'll make music what only I can.\n\nMusic that other people can make, It should be ma…",
+        "truncated": false,
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "user_mentions": [
+            {
+              "screen_name": "CQtheCoolSounds",
+              "name": "DJ Zen Cat",
+              "id": 1236214051576766500,
+              "id_str": "1236214051576766469",
+              "indices": [3, 19]
+            }
+          ],
+          "urls": []
+        },
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "retweeted_status": {
+          "created_at": "Mon May 18 14:15:49 +0000 2020",
+          "id": 1262386413900902400,
+          "id_str": "1262386413900902411",
+          "text": "I want to feel groove and beat. So I'll make music what only I can.\n\nMusic that other people can make, It should be… https://t.co/pF8WTTrzlV",
+          "truncated": true,
+          "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": [
+              {
+                "url": "https://t.co/pF8WTTrzlV",
+                "expanded_url": "https://twitter.com/i/web/status/1262386413900902411",
+                "display_url": "twitter.com/i/web/status/1…",
+                "indices": [117, 140]
+              }
+            ]
+          },
+          "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+          "in_reply_to_status_id": null,
+          "in_reply_to_status_id_str": null,
+          "in_reply_to_user_id": null,
+          "in_reply_to_user_id_str": null,
+          "in_reply_to_screen_name": null,
+          "geo": null,
+          "coordinates": null,
+          "place": null,
+          "contributors": null,
+          "is_quote_status": false,
+          "retweet_count": 1,
+          "favorite_count": 0,
+          "favorited": false,
+          "retweeted": false,
+          "possibly_sensitive": false,
+          "lang": "en"
+        },
+        "is_quote_status": false,
+        "retweet_count": 1,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+      },
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1257700534011609088/1YYnAP7O_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1257700534011609088/1YYnAP7O_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/1236214051576766469/1583597267",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    {
+      "id": 948428628957843500,
+      "id_str": "948428628957843456",
+      "name": "Emotive Grey",
+      "screen_name": "EmotiveGrey",
+      "location": "Tulsa, OK",
+      "description": "🎹Electronic/Ambient/Cinematic Artist https://t.co/0kRGdsKb5E",
+      "url": "https://t.co/vioto71r1l",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/vioto71r1l",
+              "expanded_url": "http://www.emotivegrey.com",
+              "display_url": "emotivegrey.com",
+              "indices": [0, 23]
+            }
+          ]
+        },
+        "description": {
+          "urls": [
+            {
+              "url": "https://t.co/0kRGdsKb5E",
+              "expanded_url": "https://songwhip.com/artist/emotive-grey",
+              "display_url": "songwhip.com/artist/emotive…",
+              "indices": [37, 60]
+            }
+          ]
+        }
+      },
+      "protected": false,
+      "followers_count": 3210,
+      "friends_count": 3579,
+      "listed_count": 12,
+      "created_at": "Wed Jan 03 05:39:40 +0000 2018",
+      "favourites_count": 734,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 160,
+      "lang": null,
+      "status": {
+        "created_at": "Thu Jun 11 11:21:38 +0000 2020",
+        "id": 1271039887546998800,
+        "id_str": "1271039887546998784",
+        "text": "Also available to stream here: https://t.co/a7XDOEHAjL",
+        "truncated": false,
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "user_mentions": [],
+          "urls": [
+            {
+              "url": "https://t.co/a7XDOEHAjL",
+              "expanded_url": "https://songwhip.com/emotive-grey/waters-walk",
+              "display_url": "songwhip.com/emotive-grey/w…",
+              "indices": [31, 54]
+            }
+          ]
+        },
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "in_reply_to_status_id": 1271039633632231400,
+        "in_reply_to_status_id_str": "1271039633632231424",
+        "in_reply_to_user_id": 948428628957843500,
+        "in_reply_to_user_id_str": "948428628957843456",
+        "in_reply_to_screen_name": "EmotiveGrey",
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+      },
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1038450700655579136/1c-HFAl7_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1038450700655579136/1c-HFAl7_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/948428628957843456/1536421168",
+      "profile_link_color": "981CEB",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    {
+      "id": 1256076780642934800,
+      "id_str": "1256076780642934785",
+      "name": "middleneck",
+      "screen_name": "middleneckmusic",
+      "location": "",
+      "description": "lofi/alternative @mattlags middleneckmusic@gmail.com",
+      "url": "https://t.co/jowfhrQeAj",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/jowfhrQeAj",
+              "expanded_url": "https://open.spotify.com/album/2mExxPiS2k6UN98YghwdWH?si=T32iUuhYRgyKw8w8GoN9yg",
+              "display_url": "open.spotify.com/album/2mExxPiS…",
+              "indices": [0, 23]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 507,
+      "friends_count": 2787,
+      "listed_count": 1,
+      "created_at": "Fri May 01 04:23:46 +0000 2020",
+      "favourites_count": 3259,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 170,
+      "lang": null,
+      "status": {
+        "created_at": "Sun Jun 14 22:29:18 +0000 2020",
+        "id": 1272295074710290400,
+        "id_str": "1272295074710290432",
+        "text": "@CUPIDHYUN https://t.co/5Mu25JqxOX",
+        "truncated": false,
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "user_mentions": [
+            {
+              "screen_name": "CUPIDHYUN",
+              "name": "honee 🏁 ##GO生",
+              "id": 825166769060986900,
+              "id_str": "825166769060986881",
+              "indices": [0, 10]
+            }
+          ],
+          "urls": [
+            {
+              "url": "https://t.co/5Mu25JqxOX",
+              "expanded_url": "https://open.spotify.com/artist/5AzRrbF5nyizbUhr7L4fPe?si=DG5sA-6aQsqhKJzw4vA-2w",
+              "display_url": "open.spotify.com/artist/5AzRrbF…",
+              "indices": [11, 34]
+            }
+          ]
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": 1272270641836765200,
+        "in_reply_to_status_id_str": "1272270641836765185",
+        "in_reply_to_user_id": 825166769060986900,
+        "in_reply_to_user_id_str": "825166769060986881",
+        "in_reply_to_screen_name": "CUPIDHYUN",
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "und"
+      },
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1256076884821135361/oIjqNp_f_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1256076884821135361/oIjqNp_f_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/1256076780642934785/1588307318",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": true,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    {
+      "id": 477975810,
+      "id_str": "477975810",
+      "name": "Luca Maniaci",
+      "screen_name": "lucamaniacidj",
+      "location": "Forlì, Italy",
+      "description": "Electronic music producer and founder of @mindgamesrec and @echoesfpworlds.",
+      "url": "https://t.co/noAl92Eyty",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/noAl92Eyty",
+              "expanded_url": "http://www.lucamaniaci.com",
+              "display_url": "lucamaniaci.com",
+              "indices": [0, 23]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 2001,
+      "friends_count": 3045,
+      "listed_count": 22,
+      "created_at": "Sun Jan 29 19:31:57 +0000 2012",
+      "favourites_count": 2893,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 2216,
+      "lang": null,
+      "status": {
+        "created_at": "Sat Jun 13 15:25:35 +0000 2020",
+        "id": 1271826055280631800,
+        "id_str": "1271826055280631808",
+        "text": "Check it! https://t.co/QpkVH5Ab6p",
+        "truncated": false,
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "user_mentions": [],
+          "urls": [
+            {
+              "url": "https://t.co/QpkVH5Ab6p",
+              "expanded_url": "https://twitter.com/echoesfpworlds/status/1270792072438657025",
+              "display_url": "twitter.com/echoesfpworlds…",
+              "indices": [10, 33]
+            }
+          ]
+        },
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": true,
+        "quoted_status_id": 1270792072438657000,
+        "quoted_status_id_str": "1270792072438657025",
+        "retweet_count": 3,
+        "favorite_count": 5,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+      },
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "1A1B1F",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme9/bg.gif",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme9/bg.gif",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1217181847450505217/ZB7R6UgX_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1217181847450505217/ZB7R6UgX_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/477975810/1549663271",
+      "profile_link_color": "000000",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "EFEFEF",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    {
+      "id": 102739305,
+      "id_str": "102739305",
+      "name": "Chris Villa",
+      "screen_name": "chrisvxd",
+      "location": "United Kingdom",
+      "description": "Contract React Engineer / Founder https://t.co/er7SPkzoS5 / Entrepreneur / https://t.co/8fMDhRQUJp",
+      "url": "https://t.co/wuTeOiuVHr",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/wuTeOiuVHr",
+              "expanded_url": "https://www.chrisvilla.co.uk",
+              "display_url": "chrisvilla.co.uk",
+              "indices": [0, 23]
+            }
+          ]
+        },
+        "description": {
+          "urls": [
+            {
+              "url": "https://t.co/er7SPkzoS5",
+              "expanded_url": "http://wellpaid.io",
+              "display_url": "wellpaid.io",
+              "indices": [34, 57]
+            },
+            {
+              "url": "https://t.co/8fMDhRQUJp",
+              "expanded_url": "http://github.com/chrisvxd",
+              "display_url": "github.com/chrisvxd",
+              "indices": [75, 98]
+            }
+          ]
+        }
+      },
+      "protected": false,
+      "followers_count": 245,
+      "friends_count": 375,
+      "listed_count": 18,
+      "created_at": "Thu Jan 07 17:31:09 +0000 2010",
+      "favourites_count": 687,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 817,
+      "lang": null,
+      "status": {
+        "created_at": "Thu Jun 11 07:46:36 +0000 2020",
+        "id": 1270985771093237800,
+        "id_str": "1270985771093237760",
+        "text": "RT @Mr_Sir_Raider: Make this Viral!!! MAKE THIS HAPPEN!!! https://t.co/rbNOFakr9I",
+        "truncated": false,
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "user_mentions": [
+            {
+              "screen_name": "Mr_Sir_Raider",
+              "name": "K-1 Haze🇺🇸🇵🇦",
+              "id": 1210673689810747400,
+              "id_str": "1210673689810747392",
+              "indices": [3, 17]
+            }
+          ],
+          "urls": [
+            {
+              "url": "https://t.co/rbNOFakr9I",
+              "expanded_url": "https://twitter.com/nypost/status/1270453264404930561",
+              "display_url": "twitter.com/nypost/status/…",
+              "indices": [58, 81]
+            }
+          ]
+        },
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "retweeted_status": {
+          "created_at": "Tue Jun 09 20:58:35 +0000 2020",
+          "id": 1270460304476893200,
+          "id_str": "1270460304476893185",
+          "text": "Make this Viral!!! MAKE THIS HAPPEN!!! https://t.co/rbNOFakr9I",
+          "truncated": false,
+          "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": [
+              {
+                "url": "https://t.co/rbNOFakr9I",
+                "expanded_url": "https://twitter.com/nypost/status/1270453264404930561",
+                "display_url": "twitter.com/nypost/status/…",
+                "indices": [39, 62]
+              }
+            ]
+          },
+          "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+          "in_reply_to_status_id": null,
+          "in_reply_to_status_id_str": null,
+          "in_reply_to_user_id": null,
+          "in_reply_to_user_id_str": null,
+          "in_reply_to_screen_name": null,
+          "geo": null,
+          "coordinates": null,
+          "place": null,
+          "contributors": null,
+          "is_quote_status": true,
+          "quoted_status_id": 1270453264404930600,
+          "quoted_status_id_str": "1270453264404930561",
+          "retweet_count": 249610,
+          "favorite_count": 347391,
+          "favorited": false,
+          "retweeted": false,
+          "possibly_sensitive": false,
+          "lang": "en"
+        },
+        "is_quote_status": true,
+        "quoted_status_id": 1270453264404930600,
+        "quoted_status_id_str": "1270453264404930561",
+        "retweet_count": 249610,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+      },
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "EBEBEB",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme7/bg.gif",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme7/bg.gif",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/740238598629392385/Lu03OLoM_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/740238598629392385/Lu03OLoM_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/102739305/1560237756",
+      "profile_link_color": "990000",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": false,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    {
+      "id": 1263940243616600000,
+      "id_str": "1263940243616600065",
+      "name": "No Code",
+      "screen_name": "lownocode",
+      "location": "",
+      "description": "Helping bring the power of coding to the world of non-developers.",
+      "url": "https://t.co/0OTzhZFLs5",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/0OTzhZFLs5",
+              "expanded_url": "https://lownocode.dev",
+              "display_url": "lownocode.dev",
+              "indices": [0, 23]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 4,
+      "friends_count": 31,
+      "listed_count": 0,
+      "created_at": "Fri May 22 21:10:19 +0000 2020",
+      "favourites_count": 11,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 4,
+      "lang": null,
+      "status": {
+        "created_at": "Mon Jun 01 08:02:58 +0000 2020",
+        "id": 1267366011017269200,
+        "id_str": "1267366011017269248",
+        "text": "RT @transitive_bs: Spent most of the weekend researching police militarization, violence, and racism in the US.\n\nI feel so helpless but thi…",
+        "truncated": false,
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "user_mentions": [
+            {
+              "screen_name": "transitive_bs",
+              "name": "Travis Fischer",
+              "id": 327034465,
+              "id_str": "327034465",
+              "indices": [3, 17]
+            }
+          ],
+          "urls": []
+        },
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "retweeted_status": {
+          "created_at": "Mon Jun 01 06:25:43 +0000 2020",
+          "id": 1267341540315279400,
+          "id_str": "1267341540315279361",
+          "text": "Spent most of the weekend researching police militarization, violence, and racism in the US.\n\nI feel so helpless bu… https://t.co/SnDCo7ZFJF",
+          "truncated": true,
+          "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": [
+              {
+                "url": "https://t.co/SnDCo7ZFJF",
+                "expanded_url": "https://twitter.com/i/web/status/1267341540315279361",
+                "display_url": "twitter.com/i/web/status/1…",
+                "indices": [117, 140]
+              }
+            ]
+          },
+          "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+          "in_reply_to_status_id": null,
+          "in_reply_to_status_id_str": null,
+          "in_reply_to_user_id": null,
+          "in_reply_to_user_id_str": null,
+          "in_reply_to_screen_name": null,
+          "geo": null,
+          "coordinates": null,
+          "place": null,
+          "contributors": null,
+          "is_quote_status": false,
+          "retweet_count": 5,
+          "favorite_count": 12,
+          "favorited": true,
+          "retweeted": true,
+          "possibly_sensitive": false,
+          "lang": "en"
+        },
+        "is_quote_status": false,
+        "retweet_count": 5,
+        "favorite_count": 0,
+        "favorited": true,
+        "retweeted": true,
+        "lang": "en"
+      },
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1263942664753491969/3cApcZX-_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1263942664753491969/3cApcZX-_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/1263940243616600065/1590186507",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": true,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    {
+      "id": 327034465,
+      "id_str": "327034465",
+      "name": "Travis Fischer",
+      "screen_name": "transitive_bs",
+      "location": "Brooklyn, NY",
+      "description": "Founder passionately working on https://t.co/luX0GkWDNQ 💪\n\nFacebook / Microsoft / two startup exits. I love JS, TS, react, serverless, opengl, SaaS, anime, and cats 😸",
+      "url": "https://t.co/3GeYdk9EDF",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/3GeYdk9EDF",
+              "expanded_url": "https://saasify.sh",
+              "display_url": "saasify.sh",
+              "indices": [0, 23]
+            }
+          ]
+        },
+        "description": {
+          "urls": [
+            {
+              "url": "https://t.co/luX0GkWDNQ",
+              "expanded_url": "http://saasify.sh",
+              "display_url": "saasify.sh",
+              "indices": [32, 55]
+            }
+          ]
+        }
+      },
+      "protected": false,
+      "followers_count": 683,
+      "friends_count": 350,
+      "listed_count": 32,
+      "created_at": "Thu Jun 30 22:01:58 +0000 2011",
+      "favourites_count": 12601,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 2420,
+      "lang": null,
+      "status": {
+        "created_at": "Sun Jun 14 21:47:15 +0000 2020",
+        "id": 1272284491617271800,
+        "id_str": "1272284491617271813",
+        "text": "@vasa_develop @scottsilvi @balajis @saasify_sh Loved seeing your submission btw 👏\n\nLemme know if you're interested… https://t.co/Wb1kI4v4YA",
+        "truncated": true,
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "user_mentions": [
+            {
+              "screen_name": "vasa_develop",
+              "name": "vasa",
+              "id": 893875627916378100,
+              "id_str": "893875627916378112",
+              "indices": [0, 13]
+            },
+            {
+              "screen_name": "scottsilvi",
+              "name": "Be More Curious",
+              "id": 96048399,
+              "id_str": "96048399",
+              "indices": [14, 25]
+            },
+            {
+              "screen_name": "balajis",
+              "name": "Balaji S. Srinivasan",
+              "id": 2178012643,
+              "id_str": "2178012643",
+              "indices": [26, 34]
+            },
+            {
+              "screen_name": "saasify_sh",
+              "name": "Saasify",
+              "id": 1171898954818216000,
+              "id_str": "1171898954818215936",
+              "indices": [35, 46]
+            }
+          ],
+          "urls": [
+            {
+              "url": "https://t.co/Wb1kI4v4YA",
+              "expanded_url": "https://twitter.com/i/web/status/1272284491617271813",
+              "display_url": "twitter.com/i/web/status/1…",
+              "indices": [116, 139]
+            }
+          ]
+        },
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "in_reply_to_status_id": 1272280034330292200,
+        "in_reply_to_status_id_str": "1272280034330292224",
+        "in_reply_to_user_id": 893875627916378100,
+        "in_reply_to_user_id_str": "893875627916378112",
+        "in_reply_to_screen_name": "vasa_develop",
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+      },
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "569FD2",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme6/bg.gif",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme6/bg.gif",
+      "profile_background_tile": true,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1236637281072578561/S2POoE76_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1236637281072578561/S2POoE76_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/327034465/1502552927",
+      "profile_link_color": "91D2FA",
+      "profile_sidebar_border_color": "F1F2E8",
+      "profile_sidebar_fill_color": "F1F2E8",
+      "profile_text_color": "3E3E3E",
+      "profile_use_background_image": true,
+      "has_extended_profile": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    }
+  ]
+}
