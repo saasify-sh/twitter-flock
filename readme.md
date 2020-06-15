@@ -2,6 +2,12 @@
 
 > Simple & robust workflow automations for Twitter.
 
+<p align="center">
+  <a href="https://saasify.sh" title="Saasify">
+    <img src="https://raw.githubusercontent.com/saasify-sh/twitter-flock/master/media/twitter.jpg" alt="Twitter Flock" />
+  </a>
+</p>
+
 [![Build Status](https://travis-ci.com/saasify-sh/twitter-flock.svg?branch=master)](https://travis-ci.com/saasify-sh/twitter-flock) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## How it works
