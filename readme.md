@@ -22,10 +22,10 @@ The core automation functionality is built around the [BatchJob](./lib/batch-job
 
 A `BatchJob` stores all of the state it would need to continue resolving its async batched operation in the event of an error. `BatchJob` instances can serialize this state in order to support exporting them to persistent storage (like a database or JSON file on disk).
 
-Here's an example of batch job:
+Here's an example batch job:
 
 ```js
-// fetches the user ids of all of my followers
+// fetches the user ids of all your followers
 const job = BatchJobFactory.createBatchJobTwitterGetFollowers({
   params: {
     // assumes that you already have user oauth credentials
@@ -119,7 +119,7 @@ This workflow is comprised of three jobs:
 - `twitter:send-direct-messages` - Sends a template-based direct message to each of these users.
   - Batches twitter API calls to [direct_messages/events/new](https://developer.twitter.com/en/docs/direct-messages/sending-and-receiving/api-reference/new-event)
 
-Note that a `Workflow` is itself a `BatchJob`. The two share the same interface in order for workflows to also be serializable and resumable.
+Note that `Workflow` derives from `BatchJob`. The two share the same interface in order for workflows to also be serializable and resumable. Huzzah!
 
 ## Future work
 
