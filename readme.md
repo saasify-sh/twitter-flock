@@ -6,21 +6,20 @@
 
 ## How it works
 
-All automations are built around Twitter OAuth which gives us higher rate limits and access to private actions on behalf of the authenticated user (like tweeting and sending DMs).
+All automations are built around Twitter OAuth which gives us higher rate limits and access to private user actions like tweeting and sending DMs.
 
 ### BatchJob
 
-The core functionality is built around the [BatchJob](./lib/batch-job.js) class.
+The core automation functionality is built around the [BatchJob](./lib/batch-job.js) class.
 
 `BatchJob` ensures that potentially large batches of Twitter API calls are **serializable** and **resumable**.
 
-Each `BatchJob` instance stores all of the state it would need to continue resolving its async batched operation in the event of an error like hitting a rate limit. `BatchJob` instances are serializable in order to support exporting them to persistent storage (like a database or JSON file on disk).
+A `BatchJob` stores all of the state it would need to continue resolving its async batched operation in the event of an error. `BatchJob` instances can serialize this state in order to support exporting them to persistent storage (like a database or JSON file on disk).
 
-Here's an example of creating a batch job that will fetch all of the user IDs for your twitter followers.
-
-It also shows how to serialize and resume a job.
+Here's an example of batch job:
 
 ```js
+// fetches the user ids of all of my followers
 const job = BatchJobFactory.createBatchJobTwitterGetFollowers({
   params: {
     // assumes that you already have user oauth credentials
@@ -53,6 +52,8 @@ if (job.status === 'active') {
   await job.run()
 }
 ```
+
+This example also shows how to serialize and resume a job.
 
 ### Workflow
 
