@@ -5,44 +5,53 @@ require('dotenv-safe').config()
 
 // const BatchJobFactory = require('./lib/batch-job-factory')
 const Workflow = require('./lib/workflow')
+const FlatFilePersistence = require('./lib/persistence')
 
 const twitterAccessToken = process.env.TWITTER_USER_ACCESS_TOKEN
 const twitterAccessTokenSecret = process.env.TWITTER_USER_ACCESS_TOKEN_SECRET
 
 async function main() {
-  const job = new Workflow({
-    params: {
-      accessToken: twitterAccessToken,
-      accessTokenSecret: twitterAccessTokenSecret,
-      pipeline: [
-        {
-          type: 'twitter:get-followers',
-          label: 'followers',
-          params: {
-            maxLimit: 10,
-            count: 10
-          }
-        },
-        {
-          type: 'twitter:lookup-users',
-          label: 'users',
-          connect: {
-            userIds: 'followers'
+  const persistence = new FlatFilePersistence('data/workflow-db.json')
+  const runWithPersistence = true // TODO control via CLI
+  const job = new Workflow(
+    {
+      params: {
+        accessToken: twitterAccessToken,
+        accessTokenSecret: twitterAccessTokenSecret,
+        pipeline: [
+          {
+            type: 'twitter:get-followers',
+            label: 'followers',
+            params: {
+              maxLimit: 10,
+              count: 10
+            },
+            saveOnSuccess: true
           },
-          transforms: ['sort-users-by-fuzzy-popularity']
-        },
-        {
-          type: 'twitter:send-direct-messages',
-          connect: {
-            users: 'users'
+          {
+            type: 'twitter:lookup-users',
+            label: 'users',
+            connect: {
+              userIds: 'followers'
+            },
+            transforms: ['sort-users-by-fuzzy-popularity'],
+            saveOnSuccess: true
           },
-          params: {
-            template: `Hey @{{user.screen_name}}, I'm testing an open source Twitter automation tool and you happen to be my lucky test user.\n\nSorry for the spam. https://github.com/saasify-sh/twitter-flock`
+          {
+            type: 'twitter:send-direct-messages',
+            connect: {
+              users: 'users'
+            },
+            params: {
+              template: `Hey @{{user.screen_name}}, I'm testing an open source Twitter automation tool and you happen to be my lucky test user.\n\nSorry for the spam. https://github.com/saasify-sh/twitter-flock`
+            },
+            saveOnSuccess: false
           }
-        }
-      ]
-    }
-  })
+        ]
+      }
+    },
+    runWithPersistence ? persistence : undefined
+  )
 
   // const job = BatchJobFactory.createBatchJobTwitterGetFollowers({
   //   params: {
