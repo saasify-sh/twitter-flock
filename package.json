@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "test": "run-s test:*",
+    "test:unit": "ava -v",
     "test:lint": "eslint .",
     "test:prettier": "prettier '**/*.js' --check"
   },
@@ -15,6 +16,7 @@
     "dotenv-safe": "^8.2.0",
     "email-validator": "^2.0.4",
     "find-free-port": "^2.0.0",
+    "got": "^11.3.0",
     "handlebars": "^4.7.6",
     "koa": "^2.12.1",
     "linkifyjs": "^2.1.9",
