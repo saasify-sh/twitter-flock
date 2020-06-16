@@ -139,6 +139,17 @@ Another shortcoming of the current design is that `Workflows` can only combine s
 
 A more extensible design would allow for workflows comprised of [directed acyclic graphs](https://en.wikipedia.org/wiki/Directed_acyclic_graph).
 
+## MVP TODO
+
+- [ ] twitter user enrichment => email
+- [ ] default persistent storage
+- [ ] batch job commits
+- [ ] more dynamic rate limit handling
+- [ ] gracefully handle process exit
+- [ ] user-friendly cli and oauth
+- [ ] bring-your-own-api-key
+- [ ] hosted saasify version
+
 ## License
 
 MIT © [Saasify](https://saasify.sh)
