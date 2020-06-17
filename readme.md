@@ -151,6 +151,7 @@ A more extensible design would allow for workflows comprised of [directed acycli
   - twitter:get-followers 75k / 15 min
   - twitter:lookup-users 90k / 15 min
   - twitter:send-direct-messages 1k / day
+  - twitter:send-tweets 300 / 3h -> 2.4k / day
 - [x] large account test
 - [x] gracefully handle twitter rate limits
 - [x] experiment with extracting public emails

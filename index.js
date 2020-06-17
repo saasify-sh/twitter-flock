@@ -88,6 +88,14 @@ async function main() {
   //   }
   // })
 
+  //   const job = BatchJobFactory.createBatchJobTwitterSendTweets({
+  //     params: {
+  //       accessToken: twitterAccessToken,
+  //       accessTokenSecret: twitterAccessTokenSecret,
+  //       users: [{ screen_name: 'yourUserHere' }],
+  //       template: `Hey @{{user.screen_name}}, thanks for following me!`
+  //     }
+  //   })
   await job.run()
   console.log(JSON.stringify(job.serialize(), null, 2))
 }
