@@ -142,10 +142,15 @@ A more extensible design would allow for workflows comprised of [directed acycli
 ## MVP TODO
 
 - [x] resumable batch jobs
-- [x] resumable workflows
+- [x] resumable workflows (sequences of batch jobs)
 - [x] twitter:get-followers batch job
 - [x] twitter:lookup-users batch job
 - [x] twitter:send-direct-messages batch job
+- [x] test workflow which combines these three batch jobs
+- [x] test rate limits
+  - twitter:get-followers 75k / 15 min
+  - twitter:lookup-users 90k / 15 min
+  - twitter:send-direct-messages 1k / day
 - [x] large account test
 - [x] gracefully handle twitter rate limits
 - [x] experiment with extracting public emails
