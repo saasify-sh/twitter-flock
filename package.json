@@ -15,7 +15,6 @@
   "scripts": {
     "docs": "update-markdown-usage",
     "test": "run-s test:*",
-    "test:unit": "ava -v",
     "test:lint": "eslint .",
     "test:prettier": "prettier '**/*.js' --check"
   },
@@ -23,6 +22,7 @@
     "btoa": "^1.2.1",
     "commander": "^2.20.0",
     "conf": "^6.2.4",
+    "consola": "^2.13.0",
     "delay": "^4.3.0",
     "didyoumean": "^1.2.1",
     "dotenv": "^8.2.0",
