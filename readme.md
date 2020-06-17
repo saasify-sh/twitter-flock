@@ -141,7 +141,6 @@ A more extensible design would allow for workflows comprised of [directed acycli
 
 ## MVP TODO
 
-- [ ] twitter user enrichment => email
 - [ ] default persistent storage
 - [ ] batch job commits
 - [ ] more dynamic rate limit handling
