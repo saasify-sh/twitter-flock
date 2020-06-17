@@ -141,9 +141,19 @@ A more extensible design would allow for workflows comprised of [directed acycli
 
 ## MVP TODO
 
-- [x] default persistent storage
-- [x] more frequent batch job commits
-- [ ] user-friendly cli and oauth
+- [x] resumable batch jobs
+- [x] resumable workflows
+- [x] twitter:get-followers batch job
+- [x] twitter:lookup-users batch job
+- [x] twitter:send-direct-messages batch job
+- [x] large account test
+- [x] gracefully handle twitter rate limits
+- [x] experiment with extracting public emails
+- [x] default persistent storage ([leveldb](https://github.com/Level/level))
+- [x] support commiting batch job updates
+- [x] user-friendly cli skeleton
+- [ ] basic cli commands
+- [ ] cli oauth
 - [ ] unit tests for snapshotting, serializing, deserializing
 - [ ] unit tests for workflows
 - [ ] convert transforms to batchjob
