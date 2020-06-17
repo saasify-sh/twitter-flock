@@ -149,7 +149,8 @@ A more extensible design would allow for workflows comprised of [directed acycli
 - [ ] gracefully handle process exit
 - [ ] more dynamic rate limit handling
 - [ ] user-friendly cli and oauth
-- [ ] bring-your-own-api-key
+- [ ] support bring-your-own-api-key
+- [ ] basic docs and demo video
 - [ ] hosted saasify version
 
 ## License
