@@ -1,6 +1,6 @@
 # Twitter Flock
 
-> Simple & robust workflow automations for Twitter.
+> Simple & robust workflows to export your flock of followers from Twitter.
 
 <p align="center">
   <a href="https://saasify.sh" title="Saasify">
@@ -142,13 +142,13 @@ A more extensible design would allow for workflows comprised of [directed acycli
 ## MVP TODO
 
 - [x] default persistent storage
+- [x] more frequent batch job commits
+- [ ] user-friendly cli and oauth
 - [ ] unit tests for snapshotting, serializing, deserializing
 - [ ] unit tests for workflows
 - [ ] convert transforms to batchjob
-- [ ] more frequent batch job commits
 - [ ] gracefully handle process exit
 - [ ] more dynamic rate limit handling
-- [ ] user-friendly cli and oauth
 - [ ] support bring-your-own-api-key
 - [ ] basic docs and demo video
 - [ ] hosted saasify version

@@ -22,7 +22,7 @@ async function main() {
             label: 'followers',
             params: {
               maxLimit: 10,
-              count: 10
+              count: 1
             }
           },
           {
