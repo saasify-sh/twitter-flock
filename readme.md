@@ -141,10 +141,13 @@ A more extensible design would allow for workflows comprised of [directed acycli
 
 ## MVP TODO
 
-- [ ] default persistent storage
-- [ ] batch job commits
-- [ ] more dynamic rate limit handling
+- [x] default persistent storage
+- [ ] unit tests for snapshotting, serializing, deserializing
+- [ ] unit tests for workflows
+- [ ] convert transforms to batchjob
+- [ ] more frequent batch job commits
 - [ ] gracefully handle process exit
+- [ ] more dynamic rate limit handling
 - [ ] user-friendly cli and oauth
 - [ ] bring-your-own-api-key
 - [ ] hosted saasify version
