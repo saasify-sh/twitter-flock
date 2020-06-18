@@ -157,6 +157,11 @@ A more extensible design would allow for workflows comprised of [directed acycli
 - [x] experiment with extracting public emails
 - [x] add default persistent storage
   - via [leveldb](https://github.com/Level/level)
+  - longterm storage via sqlite:
+    - [x] add sqlite & sequelize
+    - [x] add user model
+    - [ ] decide when to feed the User table (CLI? at campaign start?)
+    - [ ] add Campaign model
 - [x] support commiting batch job updates
 - [x] user-friendly cli
 - [x] add cli support for different output formats
