@@ -161,7 +161,7 @@ A more extensible design would allow for workflows comprised of [directed acycli
 - [x] user-friendly cli
 - [x] add cli support for different output formats
   - via [sheetjs/xlsx](https://github.com/SheetJS/sheetjs#supported-output-formats)
-  - json, csv, txt, xls, xlsx, html, etc
+  - json, csv, xls, xlsx, html, txt, etc
 - [x] gracefully handle process exit
 - [ ] initial set of cli commands
 - [ ] cli oauth support
