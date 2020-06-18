@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "btoa": "^1.2.1",
+    "clipboardy": "^2.3.0",
     "commander": "^2.20.0",
     "conf": "^6.2.4",
     "consola": "^2.13.0",
@@ -30,6 +31,7 @@
     "dotenv-safe": "^8.2.0",
     "enquirer": "^2.3.5",
     "find-free-port": "^2.0.0",
+    "fs-extra": "^9.0.1",
     "handlebars": "^4.7.6",
     "hasha": "^5.2.0",
     "koa": "^2.12.1",
