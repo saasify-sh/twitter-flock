@@ -161,7 +161,7 @@ A more extensible design would allow for workflows comprised of [directed acycli
     - [x] add sqlite & sequelize
     - [x] add user model
     - [ ] decide when to feed the User table (CLI? at campaign start?)
-    - [ ] add Campaign model
+    - [x] add Campaign model
 - [x] support commiting batch job updates
 - [x] user-friendly cli
 - [x] add cli support for different output formats
