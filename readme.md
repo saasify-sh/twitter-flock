@@ -155,18 +155,19 @@ A more extensible design would allow for workflows comprised of [directed acycli
 - [x] large account test
 - [x] gracefully handle twitter rate limits
 - [x] experiment with extracting public emails
-- [x] default persistent storage ([leveldb](https://github.com/Level/level))
+- [x] add default persistent storage
+  - via [leveldb](https://github.com/Level/level)
 - [x] support commiting batch job updates
 - [x] user-friendly cli
-- [x] cli support for different output formats
-- [ ] initial set of cli commands
-- [ ] cli oauth support
+- [x] add cli support for different output formats
   - via [sheetjs/xlsx](https://github.com/SheetJS/sheetjs#supported-output-formats)
   - json, csv, txt, xls, xlsx, html, etc
+- [x] gracefully handle process exit
+- [ ] initial set of cli commands
+- [ ] cli oauth support
 - [ ] unit tests for snapshotting, serializing, deserializing
 - [ ] unit tests for workflows
 - [ ] convert transforms to batchjob
-- [ ] gracefully handle process exit
 - [ ] more dynamic rate limit handling
 - [ ] support bring-your-own-api-key
 - [ ] basic docs and demo video
