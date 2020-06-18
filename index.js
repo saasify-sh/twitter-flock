@@ -6,23 +6,37 @@ require('dotenv-safe').config()
 // const BatchJobFactory = require('./lib/batch-job-factory')
 const Workflow = require('./lib/workflow')
 const db = require('./lib/db')
+const logger = require('./lib/logger')
+const twitter = require('./lib/twitter')
 
-const twitterAccessToken = process.env.TWITTER_USER_ACCESS_TOKEN
-const twitterAccessTokenSecret = process.env.TWITTER_USER_ACCESS_TOKEN_SECRET
+const twitterAccessToken = process.env.TWITTER_ACCESS_TOKEN
+const twitterAccessTokenSecret = process.env.TWITTER_ACCESS_TOKEN_SECRET
 
 async function main() {
+  logger.level = 4
+
+  const twitterClient = await twitter.getClient({
+    logger,
+    accessToken: twitterAccessToken,
+    accessTokenSecret: twitterAccessTokenSecret
+  })
+
+  const context = {
+    db,
+    logger,
+    twitterClient
+  }
+
   const job = new Workflow(
     {
       params: {
-        accessToken: twitterAccessToken,
-        accessTokenSecret: twitterAccessTokenSecret,
         pipeline: [
           {
             type: 'twitter:get-followers',
             label: 'followers',
             params: {
               maxLimit: 10,
-              count: 1
+              count: 10
             }
           },
           {
@@ -45,9 +59,7 @@ async function main() {
         ]
       }
     },
-    {
-      db
-    }
+    context
   )
 
   // const job = BatchJobFactory.createBatchJobTwitterGetFollowers({
