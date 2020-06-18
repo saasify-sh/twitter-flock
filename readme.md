@@ -157,9 +157,12 @@ A more extensible design would allow for workflows comprised of [directed acycli
 - [x] experiment with extracting public emails
 - [x] default persistent storage ([leveldb](https://github.com/Level/level))
 - [x] support commiting batch job updates
-- [x] user-friendly cli skeleton
-- [ ] basic cli commands
-- [ ] cli oauth
+- [x] user-friendly cli
+- [x] cli support for different output formats
+- [ ] initial set of cli commands
+- [ ] cli oauth support
+  - via [sheetjs/xlsx](https://github.com/SheetJS/sheetjs#supported-output-formats)
+  - json, csv, txt, xls, xlsx, html, etc
 - [ ] unit tests for snapshotting, serializing, deserializing
 - [ ] unit tests for workflows
 - [ ] convert transforms to batchjob

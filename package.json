@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "btoa": "^1.2.1",
+    "capture-exit": "^2.0.0",
     "clipboardy": "^2.3.0",
     "commander": "^2.20.0",
     "conf": "^6.2.4",
@@ -49,6 +50,7 @@
     "random": "^2.2.0",
     "saasify-client": "^1.20.0",
     "shortid": "^2.2.15",
+    "tildify": "^2.0.0",
     "twitter-lite": "^0.13.0",
     "update-notifier": "^4.1.0",
     "xlsx": "^0.16.2"
